@@ -1,14 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import RegisterPage from './pages/RegisterPage';
+import NotFoundPage from './pages/NotFoundPage';
+import { useState } from 'react';
+import { AppContext } from './context/AppContext';
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [user, setUser] = useState();
+    const [selectedGenres, setSelectedGenres] = useState();
 
   return (
     <>
-    
+    <AppContext.Provider value = {{user, setUser, selectedGenres, setSelectedGenres}} >
+    <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<RegisterPage/>} />
+            <Route path='/home' element={<RegisterPage/>} />
+            <Route path='/dashboard' element={<RegisterPage/>} />
+            <Route path='/genres' element={<RegisterPage/>} />
+            <Route path='/carousel' element={<RegisterPage/>} />
+            <Route path="*" element={<NotFoundPage/>} />
+        </Routes>
+    </BrowserRouter>
+    </AppContext.Provider>
     </>
   )
 }

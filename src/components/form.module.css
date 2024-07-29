@@ -1,0 +1,46 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form > input {
+    width: 55%;
+    padding: 10px;
+    border-radius: 4px;
+    background: #292929;
+    border: none;
+    font-size: 20px;
+}
+
+.signup {
+    background-color: #72DB73;
+    color: white;
+    font-family: Roboto;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 57%;
+    letter-spacing: 0.1rem;
+    line-height: 30px;
+    font-size: 1.5rem;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.consent {
+    width: 55%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #7C7C7C;
+    margin: 10px 0;
+}
+
+.consent > input {
+    width: 15px;
+    height: 15px;
+}
