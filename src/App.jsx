@@ -3,10 +3,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import RegisterPage from './pages/RegisterPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useState } from 'react';
-import { AppContext } from './context/AppContext';
+import AppContext from './context/AppContext';
 
 function App() {
-    const [user, setUser] = useState();
+    const [user, setUser] = useState({
+        name: "",
+        username: "",
+        email: ""
+    });
     const [selectedGenres, setSelectedGenres] = useState();
 
   return (
