@@ -9,7 +9,7 @@ export default function RegisterPage() {
       </div>
       <div className={styles.register}>
         <div>
-          <h1 className={styles.superapp}>Super App</h1>
+          <h1 className={styles.superapp + " logo"}>Super app</h1>
           <h2>Create your new account</h2>
         </div>
         <Form />

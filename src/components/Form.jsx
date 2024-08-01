@@ -2,6 +2,7 @@ import { useState, useContext } from "react";
 import styles from "./form.module.css";
 import validateForm from "../utils/validateForm";
 import AppContext from "../context/AppContext";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
   const { user, setUser } = useContext(AppContext);
@@ -9,10 +10,11 @@ export default function Form() {
     name: user?.name || "",
     username: user?.username || "",
     email: user?.email || "",
-    phone: "",
+    phone: user?.phone || "",
     consent: false,
   });
   const [error, setError] = useState();
+  const navigate = useNavigate();
 
   function handleSubmit() {
     let { isValid, invalidFields } = validateForm(userData);
@@ -21,6 +23,7 @@ export default function Form() {
     } else {
       setUser(userData);
       setError(null);
+      navigate("/genres");
     }
     console.log(isValid, invalidFields);
   }
