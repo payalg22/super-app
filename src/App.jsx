@@ -5,6 +5,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import { useState, useEffect } from "react";
 import AppContext from "./context/AppContext";
 import GenresPage from "./pages/GenresPage";
+import CarouselPage from "./pages/CarouselPage";
 
 function App() {
   const [user, setUser] = useState(
@@ -37,7 +38,7 @@ function App() {
             <Route path="/home" element={<RegisterPage />} />
             <Route path="/dashboard" element={<RegisterPage />} />
             <Route path="/genres" element={<GenresPage />} />
-            <Route path="/carousel" element={<RegisterPage />} />
+            <Route path="/carousel" element={<CarouselPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </BrowserRouter>

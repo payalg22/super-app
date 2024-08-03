@@ -1,0 +1,28 @@
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid: 60% 35% / 60% 30%;
+    justify-content: space-between;
+    align-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.newsWidget {
+    grid-area: 1 / 2 / span 2 / 2;
+}
+
+.weatherWidget {
+    width: 100%;
+    height: 100%;
+}
+

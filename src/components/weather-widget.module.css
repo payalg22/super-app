@@ -1,0 +1,47 @@
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.date {
+    width: 100%;
+    height: 30%;
+    background: hsla(311, 100%, 64%, 1);
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weather {
+    width: 100%;
+    height: 70%;
+    background: hsla(232, 62%, 16%, 1);
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.weather > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+}
+
+.font {
+    font-family: Roboto;
+}
+
+.temperature {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.condition {
+    height: 80px;
+    width: 50%;
+    align-self: center;
+}

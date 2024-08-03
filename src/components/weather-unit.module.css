@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid: 50% 50% / 25% 75%;
+    margin-bottom: 5px;
+    gap: 2px 5px;
+}
+
+.icon {
+    grid-area: 1 / 1 / span 2 / 2;
+    height: 25px;
+    align-self: center;
+    justify-self: right;
+}
+
+.details {
+    font-family: Roboto;
+    margin-left: 5px;
+    width: 100%;
+}
