@@ -36,12 +36,12 @@
 }
 
 .temperature {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 400;
 }
 
 .condition {
-    height: 80px;
+    /* height: 80px; */
     width: 50%;
     align-self: center;
 }

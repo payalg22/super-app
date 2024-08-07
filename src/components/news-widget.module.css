@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.top {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+.newsImage {
+    width: 100%;
+    margin: 0;
+    border-radius: 20px 20px 0px 0px;
+    display: block;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    background: hsla(0, 0%, 0%, 0.74);
+    bottom: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.headline {
+    font-family: Roboto;
+    font-weight: 500;
+    margin: 5px;
+}
+
+.news {
+    flex: 1;
+    background-color: white;
+    color: hsla(0, 0%, 15%, 1);
+    text-align: justify;
+    font-family: Roboto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}

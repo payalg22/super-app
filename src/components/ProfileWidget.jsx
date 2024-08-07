@@ -19,7 +19,7 @@ export default function ProfileWidget() {
           <h1>{username}</h1>
         </div>
         <div className={styles.genres}>
-          {selectedGenres.map((genre, index) => {
+          {selectedGenres.slice(0, 4).map((genre, index) => {
             return (
               <div className={styles.movieGenre} key={index}>
                 {genre}

@@ -1,5 +1,6 @@
 import ProfileWidget from "../components/ProfileWidget";
 import WeatherWidget from "../components/WeatherWidget";
+import NewsWidget from "../components/NewsWidget";
 import styles from "./CarouselPage.module.css";
 
 export default function CarouselPage() {
@@ -8,10 +9,10 @@ export default function CarouselPage() {
       <div className={styles.carousel}>
         <ProfileWidget />
         <div className={styles.newsWidget}>
-            <h2>News</h2>
+          <NewsWidget />
         </div>
         <div className={styles.weatherWidget}>
-            <WeatherWidget />
+          <WeatherWidget />
         </div>
       </div>
     </div>

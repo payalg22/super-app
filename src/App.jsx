@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import AppContext from "./context/AppContext";
 import GenresPage from "./pages/GenresPage";
 import CarouselPage from "./pages/CarouselPage";
+import DashboardPage from "./pages/DashboardPage";
 
 function App() {
   const [user, setUser] = useState(
@@ -36,7 +37,7 @@ function App() {
           <Routes>
             <Route path="/" element={<RegisterPage />} />
             <Route path="/home" element={<RegisterPage />} />
-            <Route path="/dashboard" element={<RegisterPage />} />
+            <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/genres" element={<GenresPage />} />
             <Route path="/carousel" element={<CarouselPage />} />
             <Route path="*" element={<NotFoundPage />} />
