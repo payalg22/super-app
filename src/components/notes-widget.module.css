@@ -1,0 +1,46 @@
+.container {
+    background: hsla(43, 84%, 65%, 1);
+    height: 100%;
+    width: 100%;
+    color: black;
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading {
+    font-family: "Roboto";
+}
+
+.note {
+    background: transparent;
+    border: none;
+    width: 100%;
+    flex: 1;
+    resize: none;
+    overflow-y: auto;
+    font-family: "Roboto";
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+/* .note:focus {
+    outline: none;
+} */
+
+.note::-webkit-scrollbar {
+    width: 15px;
+}
+
+.note::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.note::-webkit-scrollbar-thumb {
+    background-color: hsla(43, 100%, 82%, 1);
+    border-radius: 15px;
+}

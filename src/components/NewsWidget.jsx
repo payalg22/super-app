@@ -1,7 +1,6 @@
 import styles from "./news-widget.module.css";
-import article from "../assets/article.png";
 import { useState, useEffect } from "react";
-import fetchNews from "../../../Apr24_Capstone/client/src/api/fetchNews";
+import fetchNews from "../api/fetchNews";
 import formatDateTime from "../utils/formateDateTime";
 
 export default function NewsWidget() {

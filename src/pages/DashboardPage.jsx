@@ -1,5 +1,7 @@
 import NewsWidget from "../components/NewsWidget";
+import NotesWidget from "../components/NotesWidget";
 import ProfileWidget from "../components/ProfileWidget";
+import TimerWidget from "../components/TimerWidget";
 import WeatherWidget from "../components/WeatherWidget";
 import styles from "./dashboard-page.module.css";
 
@@ -11,7 +13,7 @@ export default function DashboardPage() {
             <ProfileWidget />
         </div>
         <div className={styles.notes}>
-            Notes
+            <NotesWidget />
         </div>
         <div className={styles.news}>
            <NewsWidget />
@@ -20,7 +22,7 @@ export default function DashboardPage() {
             <WeatherWidget />
         </div>
         <div className={styles.timer}>
-            Timer
+            <TimerWidget />
         </div>
       </div>
     </div>
