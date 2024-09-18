@@ -7,6 +7,7 @@ import AppContext from "./context/AppContext";
 import GenresPage from "./pages/GenresPage";
 import CarouselPage from "./pages/CarouselPage";
 import DashboardPage from "./pages/DashboardPage";
+import MoviesPage from "./pages/MoviesPage";
 
 function App() {
   const [user, setUser] = useState(
@@ -14,7 +15,7 @@ function App() {
       name: "",
       username: "",
       email: "",
-      phone: ""
+      phone: "",
     }
   );
   const [selectedGenres, setSelectedGenres] = useState(
@@ -40,6 +41,7 @@ function App() {
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/genres" element={<GenresPage />} />
             <Route path="/carousel" element={<CarouselPage />} />
+            <Route path="/movies" element={<MoviesPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </BrowserRouter>
